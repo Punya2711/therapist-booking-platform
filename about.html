@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width , 
+        initial-scale = 1.0">
+        <title> Therapist booking platform</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav> 
+                <a href="index.html"><img src="images/logon.png" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <li><a href="b2.html">BOOKINGS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><button class="login"><a href="prac.html">LOGIN/SIGNUP</a></button></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About us</h1>
+        </section>
+
+    <section class="box1">
+        <img class="img1" src="images/img1.png" alt="Therapy Img">
+        <div class="box1-text">
+            <h4>About this platfrom</h4>
+            <p>This platform was built with a simple idea to make finding 
+                a <br> therapist feel a little less overwhelming.
+                 No confusing steps, no endless searching.<br> 
+                 Just a clean space where you can reach out, book a session,<br> and 
+                 take the first step toward feeling better.<br>
+                 It’s quiet, simple, and meant for real people like us.</p>
+        </div>
+    </section>
+
+    <section class="box2">
+        <img class="img2" src="images/img2.png" alt="Therapy Img">
+        <div class="box2-text">
+            <h4>What this platfrom is about</h4>
+            <p>Each therapist profile comes with their availability<br>
+                displayed in a clear, easy-to-use calendar format.<br> 
+                You choose the date and time that fits your schedule, book it in seconds, 
+                and that’s it.<br> No awkward calls. No long forms.<br> 
+                We wanted to keep it smooth and stress-free, the way it should be.</p>
+        </div>
+    </section>
+
+    <section class="box3">
+        <img class="img3" src="images/img3.png" alt="Therapy Img">
+        <div class="box3-text">
+            <h4>How this helps</h4>
+            <p>We know what it feels like to want to talk but<br> not know where to begin. 
+                That’s why this platform exists to make support feel accessible 
+                and real.<br> Whether you're going through something tough or 
+                just want someone to talk to, this space is for you.<br>
+                No pressure. Just help when you need it.</p>
+        </div>
+    </section>
+
+    <section class="box4">
+        <img class="img4" src="images/img4.png" alt="Therapy Img">
+        <div class="box4-text">
+            <h4>How it works</h4>
+            <p>All it takes is a few clicks. Browse therapists, pick one that feels<br>
+                 right, check their schedule, and book your session. <br>
+                 You’ll receive reminders, and everything stays confidential.<br> We’ve 
+                 handled the technical part <br> so you can focus on what really 
+                 matters — your wellbeing.</p>
+        </div>
+    </section>
+
+    <section class="box5">
+        <img class="img5" src="images/img5.png" alt="Therapy Img">
+        <div class="box5-text">
+            <h4>Behind the scenes - About the developers</h4>
+            <p>This project was executed by a group of students assigned to work together.<br>
+                Collaboration was conducted primarily through shared documents and minimal 
+                communication.<br> Individual contributions were merged to form a cohesive
+                 output.<br> No interpersonal bonding was involved in the making of this platform.</p>
+        </div>
+    </section>
+
+<!--- footer---->
+<section class="footer">
+    <h4>CONTACT</h4>
+    <p>You can contact us at:
+    </p>
+    <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i></p>
+</section>
+
+
+
+
+
+<!------JavaScript for toggle menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+    </body>
+</html>

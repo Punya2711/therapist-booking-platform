@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width , 
+        initial-scale = 1.0">
+        <title> Therapist booking platform</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav> 
+                <a href="index.html"><img src="images/logon.png" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <li><a href="b2.html">BOOKINGS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><button class="login"><a href="prac.html">LOGIN/SIGNUP</a></button></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>login</h1>
+        </section>
+    <body>
+        <div class="container">
+            <!---login form-->
+            <div class="form-box login">
+                <form action="#">
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="username" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="password" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="forgot-link">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p>Or login with social platform</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- register form-->
+             <div class="form-box register">
+                <form action="#">
+                    <h1>Registration</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="username" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="email" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="password" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <p>Or register with social platform</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </form>
+             </div>
+
+             <!--toggle box -->
+             <div class="toggle-box">
+
+                <!--toggle box left-->
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello, welcome!</h1>
+                    <p>Don't have an account?</p>
+                    <button class="btn register-btn">Register</button>
+                </div>
+                    
+
+                <!--toggle box right-->
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome back!</h1>
+                    <p>Already have an account?</p>
+                    <button class="btn login-btn">Login</button>
+                </div>
+             </div>
+        </div>
+    </body>
+    <script src="prac.js"></script>
+</html>

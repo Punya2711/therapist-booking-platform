@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width , 
+        initial-scale = 1.0">
+        <title> Therapist booking platform</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav> 
+                <a href="index.html"><img src="images/logon.png" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <li><a href="b2.html">BOOKINGS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><button class="login"><a href="prac.html">LOGIN/SIGNUP</a></button></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Bookings</h1>
+        </section>
+
+    <div class="overlay">
+    <div class="form-container">
+      <form class="booking-form">
+        <h2>Book an Appointment</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" />
+          </div>
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Gender</label>
+            <select>
+              <option selected disabled>-- Select --</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Preferred Therapist</label>
+            <select>
+              <option selected disabled>-- Select Therapist --</option>
+              <option>Dr. Pallavi</option>
+              <option>Dr. Shwetha</option>
+              <option>Dr. Arjun</option>
+              <option>Dr. Sita</option>
+              <option>Dr. Divya</option>
+              <option>Dr. Usha</option>
+              <option>Dr. Rohan</option>
+              <option>Dr. Satish</option>
+              <option>Dr. Priya</option>
+              <option>Dr. Rangaswamy</option>
+              <option>Any available</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Appointment Date</label>
+            <input type="date" />
+          </div>
+          <div class="form-group">
+            <label>Time Slot</label>
+            <select>
+              <option selected disabled>-- Select Time --</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>2:00 PM</option>
+              <option>4:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label>Consultation Type</label>
+          <select>
+            <option selected disabled>-- Select --</option>
+            <option>In-person</option>
+            <option>Online</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label>Reason for Visit</label>
+          <textarea placeholder="Briefly describe your issue..."></textarea>
+        </div>
+
+        <div class="form-group full">
+          <label>Previous Therapy Sessions?</label>
+          <select>
+            <option selected disabled>-- Select --</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+
+        <div class="checkbox-group">
+          <label>
+          <input type="checkbox" required />
+          I have read and agree to the Terms and Conditions
+          </label>
+
+<div class="terms-paragraphs">
+  <p>1. Appointments must be cancelled 24 hours in advance.</p>
+  <p>2. Personal data is securely stored and never shared.</p>
+  <p>3. You agree to provide accurate and up-to-date information.</p>
+</div>
+        </div>
+
+        <button type="submit" class="submit-btn">Confirm Appointment</button>
+      </form>
+    </div>
+  </div>
+
+  <!--- footer---->
+<section class="footer">
+    <h4>CONTACT</h4>
+    <p>You can contact us at:
+    </p>
+    <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i></p>
+</section>
+
+
+
+
+
+<!------JavaScript for toggle menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
